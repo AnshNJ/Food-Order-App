@@ -1,7 +1,7 @@
 {
   "name": "react-complete-guide",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "http://AnshNJ.github.io/Food-order-App"
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
