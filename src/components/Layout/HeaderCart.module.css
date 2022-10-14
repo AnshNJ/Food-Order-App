@@ -1,0 +1,56 @@
+.headerCart {
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    background-color: white;
+    color: rgb(73, 146, 73);
+    padding: 0.75rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.headerCart:hover,
+.headerCart:active {
+  background-color: #1a3d19;
+  color: white;
+}
+
+.icon {
+    width: 1.25rem;
+    height: 1.35rem;
+    margin-right: 0.75rem;
+}
+
+.badge {
+    background-color: #256431;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  font-weight: bold;
+  color: white ;
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
