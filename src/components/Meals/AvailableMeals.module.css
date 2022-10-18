@@ -1,11 +1,13 @@
 .meals {
-    max-width: 60rem;
     width: 90%;
     margin: 2rem auto;
     animation: meals-appear 1s ease-out forwards;
   }
   
   .meals ul {
+    display: grid;
+    grid-gap: auto;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
     list-style: none;
     margin: 0;
     padding: 0;
@@ -21,4 +23,14 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  .loading {
+    color: white;
+    text-align: center;
+  }
+
+  .mealsError {
+    text-align: center;
+    color: red;
   }

@@ -12,6 +12,7 @@ function MealsSummary() {
         All our meals are cooked with high-quality ingredients, just-in-time and
         of course by experienced chefs!
       </p>
+      <button className={classes.menu}>View Menu</button>
     </section>
   );
 }

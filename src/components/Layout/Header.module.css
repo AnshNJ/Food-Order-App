@@ -4,7 +4,8 @@
     left: 0;
     width: 100%;
     height: 5rem;
-    background-color: rgba(115, 223, 101, 0.906);
+    background-color: transparent;
+    backdrop-filter: blur(5px);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -12,13 +13,16 @@
     padding: 0 10%;
     box-shadow: 0 2px 8px rgba(0,0,0,0.25);
     z-index: 999;
+    font-family: "Sofia", cursive;
+    color: rgb(255, 217, 140);
 }
 
 .main-image {
     width: 100%;
-    height: 25rem;
+    height: 100vh;
     z-index: 0;
     overflow: hidden;
+    filter: brightness(30%);
 }
 
 .main-image img{
