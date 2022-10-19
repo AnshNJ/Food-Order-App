@@ -63,17 +63,17 @@ const Checkout = (props) => {
       <div className={nameControlClasses}>
         <label htmlFor="name">Your Name</label>
         <input type="text" id="name" ref={nameInputRef} />
-        {!formInputValidity.name && <p>Please enter a valid name...</p>}
+        {!formInputValidity.name && <p style={{color:'red'}}>Please enter a valid name...</p>}
       </div>
       <div className={addressControlClasses}>
         <label htmlFor="address">Address</label>
         <input type="text" id="address" ref={addressInputRef} />
-        {!formInputValidity.address && <p>Please enter a valid address...</p>}
+        {!formInputValidity.address && <p style={{color:'red'}}>Please enter a valid address...</p>}
       </div>
       <div className={cityControlClasses}>
         <label htmlFor="city">City</label>
         <input type="text" id="city" ref={cityInputRef} />
-        {!formInputValidity.city && <p>Please enter a valid city...</p>}
+        {!formInputValidity.city && <p style={{color:'red'}}>Please enter a valid city...</p>}
       </div>
       <div className={classes.actions}>
         <button type="button" onClick={props.onCancel}>

@@ -26,6 +26,7 @@ function AvailableMeals() {
       for (const key in data) {
         leadedMeals.push({
           id: key,
+          image: data[key].image,
           name: data[key].name,
           description: data[key].description,
           price: data[key].price
@@ -43,7 +44,7 @@ function AvailableMeals() {
 
   if (isLoading) {
     return (
-      <section className={classes.loading}><p>Loading list of meals..</p></section>
+      <section className={classes.loading}><p style={{color: 'black'}}>Loading list of meals..</p></section>
     )
   }
 
@@ -57,6 +58,7 @@ function AvailableMeals() {
     <MealItems
       key={meal.id}
       id={meal.id}
+      image={meal.image}
       name={meal.name}
       description={meal.description}
       price={meal.price}

@@ -90,7 +90,7 @@ function Cart(props) {
 
   const didSubmitModalContent = (
     <Fragment>
-      <p>Order placed!</p>
+      <p style={{color:'green'}}>Order placed!</p>
       <div className={classes.actions}>
         <button className={classes["button--alt"]} onClick={props.onClose}>
           Close
